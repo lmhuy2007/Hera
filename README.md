@@ -8,4 +8,4 @@
 
 !git clone https://github.com/vdkhoi20/Hera.git
 
-!python MEDAI/app.py --chatkey= --skinkey=
+!python Hera/app.py --chatkey= --skinkey=
