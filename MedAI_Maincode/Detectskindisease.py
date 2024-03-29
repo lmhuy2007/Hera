@@ -137,7 +137,7 @@ def create_skin_tab(skinkey="32ed3546e6msha9a557cd5b168e1p1ed538jsn0facf5ffe5e4"
         with gr.Row():
           inp = gr.Image(type="numpy",height=512, width=512,
           value=os.path.join(os.path.dirname(__file__), "../Image/thuydau.jpg"))
-          out = gr.Label(label="Kết Quả Dự Đoán",value="Thủy Đậu 99%",elem_classes="textboxskin")
+          out = gr.Label(label="Kết Quả Dự Đoán",elem_classes="textboxskin")
         btn = gr.Button("Xử Lý")
         btn.click(fn=detect_skin_disease, inputs=[inp,keybox], outputs=out)
     return demo
