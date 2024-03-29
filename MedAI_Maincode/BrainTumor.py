@@ -33,7 +33,7 @@ def create_brain_tumor_detect() :
 
           inp = gr.Image(label = "Xin Nhập Ảnh Vào", type = 'pil', height=512, width=512,
           value=os.path.join(os.path.dirname(__file__), "../Image/braintt.jpg"),interactive=True)
-          out = gr.Image(label = "Kết Quả", type = 'pil', value=os.path.join(os.path.dirname(__file__), "../Image/brainbbox.png"))
+          out = gr.Image(label = "Kết Quả", type = 'pil')
       btn = gr.Button("Xử Lý")
       btn.click(fn=Processing, inputs= inp, outputs=out)
   return Brain_Tumor_Detect
