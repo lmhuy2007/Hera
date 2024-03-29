@@ -29,7 +29,7 @@ def create_pneumonia_tab() :
           
 
           inp = gr.Image(label= "Nhập Ảnh",type="pil",value=os.path.join(os.path.dirname(__file__), "../Image/viemphoi.jpeg"),interactive=True)
-          out = gr.Label(label="Kết Quả Dự Đoán",value="Bình thường: 99%")
+          out = gr.Label(label="Kết Quả Dự Đoán")
       btn = gr.Button("Xử Lý")
       btn.click(fn=update, inputs=inp, outputs=out)
   return demo
